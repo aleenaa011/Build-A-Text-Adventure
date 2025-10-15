@@ -1,0 +1,68 @@
+#include <iostream>
+
+int main() {
+    int choice1;
+    int choice2;
+    int choice3;
+    
+    std::cout << "You are an ambitious explorer, seeking the legendary Lost City of Aetheris, said to be hidden deep within a jungle. Your journey begins as you enter the dense, untamed jungle, and your choices will determine whether you uncover Aetheris' secrets or become lost in its depths forever.\n";
+    std::cout << "You find yourself standing at the edge of a vast, dark jungle. Ahead, you spot a narrow path that leads deeper into the jungle.\n";
+    std::cout << "Do you:\n";
+    std::cout << "1. Enter the jungle, following the path.\n";
+    std::cout << "2. Take a moment to gather supplies from your backpack.\n";
+    std::cin >> choice1;
+    
+    if (choice1 == 1) {
+        std::cout << "You step cautiously onto the path, the dense foliage closing behind you as if the jungle itself is swallowing your every move. After a few hours of walking, you encounter a fork in the road.\n";
+        std::cout << "3. Take the left path, where you hear the sound of rushing water.\n";
+        std::cout << "4. Take the right path, which is eerily quiet and seems to lead into a darker part of the jungle.\n";
+    } else {
+        std::cout << "You follow the sound of rushing water and soon come across a wide river, its waters fast and dangerous. There's a makeshift bridge that looks unstable, and nearby, a boat is tied to a tree.\n";
+        std::cout << "5. Cross the rickety bridge, hoping it holds.\n";
+        std::cout << "6. Take the boat across the river, risking a potential capsize.\n";
+    }
+
+    std::cin >> choice2;
+
+    if (choice2 == 3) {
+        std::cout << "You follow the sound of rushing water and soon come across a wide river, its waters fast and dangerous. There's a makeshift bridge that looks unstable, and nearby, a boat is tied to a tree.\n";
+        std::cout << "7. Cross the rickety bridge, hoping it holds.\n";
+        std::cout << "8. Take the boat across the river, risking a potential capsize.\n";
+    } else if (choice2 == 4) {
+        std::cout << "You choose the right path, where an eerie silence hangs in the air. The deeper you go, the darker and more overgrown the jungle becomes. Eventually, you reach a clearing with an ancient stone structure, covered in moss and vines. A strange symbol is carved at the entrance, looking both like a map and a warning.\n";
+        std::cout << "9. Explore the area around the temple.\n";
+        std::cout << "10. Turn back, feeling uneasy.\n";
+    } else if (choice2 == 5) {
+        std::cout << "With a deep breath, you step onto the bridge, each plank creaking under your weight. Halfway across, the bridge groans louder, but you press on, heart racing. Just as you reach the other side, the bridge collapses into the river with a mighty crash, but you're safe. You find yourself on the edge of a dense thicket. The jungle seems even darker here, and you spot a faint glimmer through the trees—a structure, possibly ancient, hidden within the shadows.\n";
+        std::cout << "11. Investigate the structure cautiously, unsure of what awaits.\n";
+        std::cout << "12. Turn back and retrace your steps, wary of the dangers ahead.\n";
+    } else if (choice2 == 6) {
+        std::cout << "You untie the boat and carefully push it into the river. As you begin to row, the current pulls you faster than you anticipated. The boat sways dangerously, and your heart pounds in your chest as you fight to maintain control. Suddenly, the boat tips sharply, and you're thrown into the cold, rushing water. You struggle to stay afloat, but the current is too strong. In a desperate last effort, you grab onto a nearby branch and pull yourself onto the riverbank, exhausted but alive. The boat drifts away, lost in the currents.\n";
+        std::cout << "You're left on the edge of a dense jungle, damp and cold, but you've survived. There's a strange, shimmering light coming from deeper into the jungle. Something is there, waiting for you.\n";
+        std::cout << "13. Push forward towards the light, curiosity driving you.\n";
+        std::cout << "14. Find shelter and rest, the jungle can wait.\n";
+    }
+
+    std::cin >> choice3;
+
+    if (choice3 == 7) {
+        std::cout << "You step carefully across the unstable bridge, but it holds! You make it to the other side safely and find a peaceful clearing with a stunning view of the jungle, feeling a sense of accomplishment as you continue your journey.\n";
+    } else if (choice3 == 8) {
+        std::cout << "The boat sways, but you manage to row across the river without capsizing. You reach the other side, feeling relieved, and discover a beautiful, hidden grove with exotic flowers. The air feels calm and welcoming.\n";
+    } else if (choice3 == 9) {
+        std::cout << "You wander around the temple, discovering hidden treasures and ancient relics. The area is peaceful, and you feel a deep sense of awe and respect for the history around you. You've uncovered something truly remarkable.\n";
+    } else if (choice3 == 10) {
+        std::cout << "You decide to leave the temple and retrace your steps. As you return to the path, the jungle opens up to reveal a beautiful waterfall. The serene setting helps calm your nerves, and you feel renewed.\n";
+    } else if (choice3 == 11) {
+        std::cout << "You cautiously enter the temple, where you uncover a treasure trove of gold and artifacts. The discovery feels like a victory, and you marvel at the ancient secrets you've uncovered, feeling proud of your bravery.\n";
+    } else if (choice3 == 12) {
+        std::cout << "You choose to turn back, and as you return to the fork in the road, the jungle clears, revealing a peaceful campsite. You rest there, enjoying the calm, and reflect on your journey with a sense of fulfillment.\n";
+    } else if (choice3 == 13) {
+        std::cout << "You follow the shimmering light and discover a hidden cave filled with glowing gems. The cave is warm and welcoming, and you feel like you've found something magical—an ancient secret of the jungle that will forever be yours to protect.\n";
+    } else if (choice3 == 14) {
+        std::cout << "You find a safe, tranquil spot to rest for the night. As you sleep under the stars, you dream of the Lost City and awaken with a sense of peace, ready for the next stage of your adventure.\n";
+    }
+
+    std::cout << "The End!\n";
+    return 0;
+}
